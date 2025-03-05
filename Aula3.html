@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Aula 3</title>
+    <script>
+      function somar() {
+        let numero1 = Number(document.getElementById("numero1").value);
+        let numero2 = Number(document.getElementById("numero2").value);
+        alert(numero1 + numero2);
+      }
+      function subtrair() {
+        let numero3 = Number(document.getElementById("numero3").value);
+        let numero4 = Number(document.getElementById("numero4").value);
+        alert(numero3 - numero4);
+      }
+      function multiplicar() {
+        let numero5 = Number(document.getElementById("numero5").value);
+        let numero6 = Number(document.getElementById("numero6").value);
+        alert(numero5 * numero6);
+      }
+      function dividir() {
+        let numero7 = Number(document.getElementById("numero7").value);
+        let numero8 = Number(document.getElementById("numero8").value);
+        alert(numero7 / numero8);
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Somar</h2>
+    <p></p>
+    <label for="numero1">Digite o primeiro número:</label>
+    <input type="text" id="numero1" name="numero1" placeholder="Numero 1" />
+    <br /><br />
+    <label for="numero2">Digite o segundo número:</label>
+    <input type="text" id="numero2" name="numero2" placeholder="Numero 2" />
+    <br /><br />
+    <input type="button" onclick="somar()" value="Confirmar" />
+    <p></p>
+
+    <h2>Subtrair</h2>
+    <p></p>
+    <label for="numero3">Digite o primeiro número:</label>
+    <input type="text" id="numero3" name="numero3" placeholder="Numero 1" />
+    <br /><br />
+    <label for="numero2">Digite o segundo número:</label>
+    <input type="text" id="numero4" name="numero4" placeholder="Numero 2" />
+    <br /><br />
+    <input type="button" onclick="subtrair()" value="Confirmar" />
+    <br /><br />
+
+    <h2>multiplicar</h2>
+    <p></p>
+    <label for="numero5">Digite o primeiro número:</label>
+    <input type="text" id="numero5" name="numero5" placeholder="Numero 1" />
+    <br /><br />
+    <label for="numero2">Digite o segundo número:</label>
+    <input type="text" id="numero6" name="numero6" placeholder="Numero 2" />
+    <br /><br />
+    <input type="button" onclick="multiplicar()" value="Confirmar" />
+    <br /><br />
+
+    <h2>Dividir</h2>
+    <p></p>
+    <label for="numero7">Digite o primeiro número:</label>
+    <input type="text" id="numero7" name="numero7" placeholder="Numero 1" />
+    <br /><br />
+    <label for="numero2">Digite o segundo número:</label>
+    <input type="text" id="numero8" name="numero8" placeholder="Numero 2" />
+    <br /><br />
+    <input type="button" onclick="dividir()" value="Confirmar" />
+    <br /><br />
+  </body>
+</html>

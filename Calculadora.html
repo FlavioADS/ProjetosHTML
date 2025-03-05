@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const soma = (a, b) => alert(a + b);
+      const subtrair = (a, b) => alert(a - b);
+      const multiplicar = (a, b) => alert(a * b);
+      const dividir = (a, b) => alert(a / b);
+      function calculadora() {
+        let operacao = Number(
+          prompt(
+            "Escolha a operação:\n 1-somar \n 2-subtrair\n 3-multiplicar\n 4-dividir"
+          )
+        );
+        const numero1 = Number(document.getElementById("numero1").value);
+        const numero2 = Number(document.getElementById("numero2").value);
+        switch (operacao) {
+          case 1:
+            soma(numero1, numero2);
+            break;
+          case 2:
+            subtrair(numero1, numero2);
+            break;
+          case 3:
+            multiplicar(numero1, numero2);
+            break;
+          case 4:
+            dividir(numero1, numero2);
+            break;
+          default:
+            alert("Operação inválida.");
+        }
+      }
+    </script>
+    <input type="text" placeholder="Numero 1" id="numero1" />
+    <input type="text" placeholder="Numero 2" id="numero2" />
+    <button onclick="calculadora()">Calcular</button>
+  </body>
+</html>
